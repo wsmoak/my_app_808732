@@ -12,8 +12,8 @@ defmodule MyApp_808732.User do
     timestamps
   end
 
-  @required_fields ~w(name email user_id access_token refresh_token expires_at)
-  @optional_fields ~w()
+  @required_fields ~w()
+  @optional_fields ~w(name email user_id access_token refresh_token expires_at)
 
   @doc """
   Creates a changeset based on the `model` and `params`.
