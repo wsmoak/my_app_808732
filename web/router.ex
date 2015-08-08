@@ -23,6 +23,7 @@ defmodule MyApp_808732.Router do
   scope "/auth", MyApp_808732 do
     pipe_through :browser
     get "/", AuthController, :index
+    get "/callback", AuthController, :callback
   end
 
   # Other scopes may use custom stacks.
